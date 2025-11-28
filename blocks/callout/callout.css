@@ -60,21 +60,21 @@
 /* Button uses variant colors */
 .callout-info .callout-button {
   background: #073b6f;
-  color: #ffffff;
+  color: #fff;
 }
 
 .callout-warning .callout-button {
   background: #6b3a00;
-  color: #ffffff;
+  color: #fff;
 }
 
 .callout-success .callout-button {
   background: #104325;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Small screens */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .callout-inner {
     padding: 12px 14px;
   }
