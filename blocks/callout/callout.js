@@ -19,23 +19,23 @@ export default function decorate(block) {
   wrapper.classList.add('callout-inner');
 
   // Variant class (info / warning / success / default)
-  const variantText = config['variant']?.textContent.trim().toLowerCase() || 'info';
+  const variantText = config.variant?.textContent.trim().toLowerCase() || 'info';
   wrapper.classList.add(`callout-${variantText}`);
 
   // Title
-  if (config['title']) {
+  if (config.title) {
     const titleEl = document.createElement('h3');
     titleEl.classList.add('callout-title');
-    titleEl.textContent = config['title'].textContent.trim();
+    titleEl.textContent = config.title.textContent.trim();
     wrapper.appendChild(titleEl);
   }
 
   // Body
-  if (config['body']) {
+  if (config.body) {
     const bodyEl = document.createElement('div');
     bodyEl.classList.add('callout-body');
     // preserve paragraphs/links inside the body cell
-    [...config['body'].childNodes].forEach((node) => bodyEl.appendChild(node.cloneNode(true)));
+    [...config.body.childNodes].forEach((node) => bodyEl.appendChild(node.cloneNode(true)));
     wrapper.appendChild(bodyEl);
   }
 
