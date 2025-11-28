@@ -9,6 +9,7 @@
     "id": "section",
     "components": [
       "accordion",
+      "callout",
       "cards",
       "carousel",
       "columns",
@@ -31,6 +32,22 @@
       "accordion-item"
     ]
   },
+
+  {
+    "id": "callout",
+    "components": [
+      "text",
+      "image"
+    ],
+    "plugins": {
+      "da": {
+        "name": "callout",
+        "rows": 4,
+        "columns": 2
+      }
+    }
+  },
+
   {
     "id": "cards",
     "components": [

@@ -1,0 +1,81 @@
+.callout {
+  margin: 1.5rem 0;
+}
+
+.callout-inner {
+  border-radius: 8px;
+  padding: 16px 20px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Variants */
+.callout-info {
+  background: #e8f3ff;
+  border-color: #9ac4ff;
+  color: #073b6f;
+}
+
+.callout-warning {
+  background: #fff4e5;
+  border-color: #ffc58a;
+  color: #6b3a00;
+}
+
+.callout-success {
+  background: #e7f7ed;
+  border-color: #8fd3a8;
+  color: #104325;
+}
+
+/* Title */
+.callout-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Body */
+.callout-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Actions */
+.callout-actions {
+  margin-top: 8px;
+}
+
+.callout-button {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Button uses variant colors */
+.callout-info .callout-button {
+  background: #073b6f;
+  color: #ffffff;
+}
+
+.callout-warning .callout-button {
+  background: #6b3a00;
+  color: #ffffff;
+}
+
+.callout-success .callout-button {
+  background: #104325;
+  color: #ffffff;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .callout-inner {
+    padding: 12px 14px;
+  }
+}

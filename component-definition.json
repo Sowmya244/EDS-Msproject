@@ -69,6 +69,19 @@
             }
           }
         },
+        
+          {
+  "title": "Callout",
+  "id": "callout",
+  "plugins": {
+    "da": {
+      "name": "callout",
+      "rows": 4,
+      "columns": 2
+    }
+  }
+},
+
         {
           "title": "Cards",
           "id": "cards",
